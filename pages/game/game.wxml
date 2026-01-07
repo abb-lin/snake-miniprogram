@@ -1,0 +1,12 @@
+<view class="container">
+  <!-- 游戏屏幕 -->
+  <view class="game-screen">
+    <canvas id="gameCanvas" class="game-canvas" canvas-id="gameCanvas" bindtouchstart="handleTouchStart" bindtouchend="handleTouchEnd"></canvas>
+    <view class="game-info">得分: {{score}}</view>
+    <view class="game-over" wx:if="{{isGameOver}}">
+      <text class="game-over-text">游戏结束</text>
+      <button class="restart-btn" bindtap="restartGame">再来一局</button>
+      <button class="back-btn" bindtap="backToHome">返回首页</button>
+    </view>
+  </view>
+</view>

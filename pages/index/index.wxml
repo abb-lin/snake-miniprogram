@@ -1,0 +1,36 @@
+<view class="container">
+  <!-- 首页 -->
+  <view class="home-screen">
+    <text class="title">🐍 可爱贪吃蛇</text>
+    <view class="skins-section">
+      <text class="skins-title">选择皮肤</text>
+      <view class="skin-options">
+        <view class="skin-item {{selectedSkin === 0 ? 'selected' : ''}}" bindtap="selectSkin" data-index="0">
+          <view class="skin-preview" style="background-color: #4ecdc4;"></view>
+          <view class="skin-name">经典蓝</view>
+        </view>
+        <view class="skin-item {{selectedSkin === 1 ? 'selected' : ''}}" bindtap="selectSkin" data-index="1">
+          <view class="skin-preview" style="background-color: #ff9a9e;"></view>
+          <view class="skin-name">可爱粉</view>
+        </view>
+        <view class="skin-item {{selectedSkin === 2 ? 'selected' : ''}}" bindtap="selectSkin" data-index="2">
+          <view class="skin-preview" style="background-color: #ff6b6b;"></view>
+          <view class="skin-name">活力橙</view>
+        </view>
+        <view class="skin-item {{selectedSkin === 3 ? 'selected' : ''}}" bindtap="selectSkin" data-index="3">
+          <view class="skin-preview" style="background-color: #96ceb4;"></view>
+          <view class="skin-name">清新绿</view>
+        </view>
+        <view class="skin-item {{selectedSkin === 4 ? 'selected' : ''}}" bindtap="selectSkin" data-index="4">
+          <view class="skin-preview" style="background-color: #45b7d1;"></view>
+          <view class="skin-name">天空蓝</view>
+        </view>
+        <view class="skin-item {{selectedSkin === 5 ? 'selected' : ''}}" bindtap="selectSkin" data-index="5">
+          <view class="skin-preview" style="background-color: #9b59b6;"></view>
+          <view class="skin-name">优雅紫</view>
+        </view>
+      </view>
+    </view>
+    <button class="start-btn" bindtap="startGame">开始游戏</button>
+  </view>
+</view>

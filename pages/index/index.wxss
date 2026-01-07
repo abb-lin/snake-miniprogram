@@ -1,0 +1,131 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+}
+
+/* 首页样式 */
+.home-screen {
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 60px;
+}
+
+.start-btn {
+  background: linear-gradient(135deg, #4ecdc4 0%, #45b7aa 100%);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(78, 205, 196, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 40px;
+}
+
+.start-btn:hover {
+  background: linear-gradient(135deg, #45b7aa 0%, #3a9b93 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(78, 205, 196, 0.6);
+}
+
+/* 皮肤选择样式 */
+.skins-section {
+  margin-bottom: 40px;
+}
+
+.skins-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.skin-options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skin-item {
+  width: 80px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.skin-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skin-item.selected {
+  background: white;
+  box-shadow: 0 0 20px rgba(78, 205, 196, 0.6);
+  transform: scale(1.1);
+}
+
+.skin-preview {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  margin: 0 auto 10px;
+}
+
+.skin-name {
+  font-size: 12px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .skins-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .skin-options {
+    gap: 15px;
+  }
+
+  .skin-item {
+    width: 70px;
+    padding: 8px;
+  }
+
+  .skin-preview {
+    width: 50px;
+    height: 50px;
+  }
+
+  .start-btn {
+    padding: 14px 28px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
